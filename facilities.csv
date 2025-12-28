@@ -1,0 +1,12 @@
+id,name,type,location,capacity,price,status,description,amenities,imageURL
+FAC001,Basketball Court A,Sport,Building 1,10,30.00,Active,Standard indoor court with hardwood floor,WiFi;Air Conditioning;Lockers,basketball_court.jpg
+FAC002,Executive Meeting Room,Meeting,Building 2 3rd Floor,15,45.00,Active,Projector and whiteboard available,WiFi;Projector;Whiteboard,meeting_room.jpg
+FAC003,Main Auditorium,Event,Building A Ground Floor,300,200.00,Active,Large stage with tiered seating,WiFi;Sound System;Stage;Lighting,auditorium.jpg
+FAC004,Computer Lab 1,Education,Tech Wing 2nd Floor,30,50.00,Active,Equipped with 30 high-end workstations,WiFi;Computers;Projector;AC,computer_lab.jpg
+FAC005,Tennis Court 1,Sport,Outdoor Complex Zone B,4,15.00,Active,Synthetic grass surface with floodlights,Lighting;Seating Area,tennis_court.jpg
+FAC006,Quiet Study Pod,Study,Library 3rd Floor,2,5.00,Active,Soundproof pod for focused work,WiFi;Power Outlets,study_pod.jpg
+FAC007,Swimming Pool Lane 1,Sport,Aquatics Center,10,12.50,Maintenance,Heated indoor pool lane,Showers;Lockers;Life Guard,pool.jpg
+FAC008,Banquet Hall,Event,Building 5 Top Floor,150,120.00,Active,Open space suitable for weddings or parties,WiFi;Kitchenette;Tables;Chairs,banquet_hall.jpg
+FAC009,Music Rehearsal Room,Studio,Arts Building Basement,6,25.00,Active,Acoustically treated room with piano,Piano;Music Stands;Soundproofing,music_room.jpg
+FAC010,Lecture Hall B,Education,Building 2 1st Floor,60,40.00,Inactive,Standard lecture layout with podium,WiFi;Projector;Microphone;Whiteboard,lecture_hall.jpgFAC-EEA7,youssef,bassel,building aley,24,300.0,Active,aaaa,wifi,ac,parking,default.jpg
+FAC-52A6,youssef,bassel,aley,20,200.0,Active,gameel gidan,wifi,ac,default.jpg
