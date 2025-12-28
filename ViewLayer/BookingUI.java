@@ -37,7 +37,7 @@ public class BookingUI {
                 }
             }
             else if (choice == 2) {
-                System.out.print("Enter Booking ID (e.g. BKG001): ");
+                System.out.print("Enter Booking ID (e.g. BK12345678): ");
                 String bId = scanner.nextLine();
                 Invoice inv = invoiceCtrl.generateInvoice(bId);
                 

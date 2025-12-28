@@ -19,7 +19,7 @@ public class MainDashboardUI {
             
             if (scanner.hasNextInt()) {
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1: adminUI.displayMenu(scanner); break;

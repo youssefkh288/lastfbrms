@@ -9,7 +9,7 @@ public class AdminFacilityUI {
     
     public void displayMenu(Scanner scanner) {
         while(true) {
-            System.out.println("\n--- [UC06] MANAGE FACILITIES (Admin) ---");
+            System.out.println("\n--- MANAGE FACILITIES (Admin) ---");
             System.out.println("1. View All Facilities");
             System.out.println("2. Add New Facility");
             System.out.println("0. Back");
@@ -17,7 +17,7 @@ public class AdminFacilityUI {
             
             if (scanner.hasNextInt()) {
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // consume newline
+                scanner.nextLine(); 
 
                 if (choice == 0) break;
                 
@@ -45,7 +45,7 @@ public class AdminFacilityUI {
     private void showAddForm(Scanner scanner) {
         System.out.println("\n=== ADD NEW FACILITY ===");
         
-        // 1. Basic Information (From Screenshot 2)
+        // 1. Basic Information
         System.out.print("Facility Name: ");
         String name = scanner.nextLine();
 
@@ -60,7 +60,7 @@ public class AdminFacilityUI {
 
         System.out.print("Price per Hour ($): ");
         double price = scanner.nextDouble();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
 
         System.out.print("Description: ");
         String desc = scanner.nextLine();
@@ -70,13 +70,12 @@ public class AdminFacilityUI {
         String status = (scanner.nextInt() == 1) ? "Active" : "Inactive";
         scanner.nextLine(); 
 
-        // 2. Amenities (From Screenshot 3)
-        // Simulating the "Chip" selection by asking for a list
+        // 2. Amenities 
         System.out.println("Amenities (Available: WiFi, AC, Parking, Lockers, Projector, Sound System)");
         System.out.print("Type amenities separated by semicolon (e.g. WiFi;AC;Parking): ");
         String amenities = scanner.nextLine();
 
-        // 3. Facility Image (From Screenshot 3)
+        // 3. Facility Image
         System.out.print("Image URL (Optional, press Enter to skip): ");
         String img = scanner.nextLine();
         if (img.isEmpty()) img = "default.jpg";
@@ -84,7 +83,7 @@ public class AdminFacilityUI {
         // Save
         controller.addNewFacility(name, type, location, capacity, price, desc, status, amenities, img);
         
-        // Success Message (From Screenshot 4)
+        // Success Message 
         System.out.println("\n>> SUCCESS: Facility '" + name + "' has been added to the system!");
     }
 }

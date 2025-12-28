@@ -6,12 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FacilityDAO {
-    // NOTE: This looks for the file in the project ROOT folder, not inside src
+
     private final String FILE_NAME = "facilities.csv";
 
     public void insert(Facility f) {
         File file = new File(FILE_NAME);
-        // DEBUG: Print where we are writing
+       
         System.out.println(">> DEBUG: Writing to file at: " + file.getAbsolutePath());
 
         try (FileWriter fw = new FileWriter(file, true);
@@ -19,7 +19,7 @@ public class FacilityDAO {
              PrintWriter out = new PrintWriter(bw)) {
             
             out.println(f.toString());
-            out.flush(); // Force write to disk immediately
+            out.flush(); 
             
         } catch (IOException e) {
             System.out.println(">> ERROR: Could not write to file! " + e.getMessage());
@@ -40,7 +40,7 @@ public class FacilityDAO {
             String line;
             boolean isHeader = true;
             while ((line = br.readLine()) != null) {
-                if (isHeader) { isHeader = false; continue; } // Skip header
+                if (isHeader) { isHeader = false; continue; } 
                 
                 String[] data = line.split(",");
                 // Expect 10 columns

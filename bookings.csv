@@ -1,11 +1,23 @@
-id,facility_name,member_name,status,date,time
-BKG001,Basketball Court A,John Doe,Confirmed,Dec 28,10:00 - 11:00
-BKG002,Executive Room,Jane Smith,Pending,Dec 28,12:00 - 14:00
-BKG003,Main Auditorium,Michael Brown,Confirmed,Dec 29,14:00 - 16:00
-BKG004,Tennis Court 1,Emily Davis,Cancelled,Dec 30,18:00 - 19:00
-BKG005,Computer Lab 1,David Wilson,Confirmed,Dec 31,09:00 - 11:00
-BKG006,Quiet Study Pod,Sarah Johnson,Pending,Dec 28,13:00 - 15:00
-BKG007,Swimming Pool,Chris Martin,Confirmed,Jan 02,06:00 - 07:00
-BKG008,Banquet Hall,Robert Taylor,Pending,Jan 03,19:00 - 23:00
-BKG009,Music Room,Jessica White,Confirmed,Jan 04,10:00 - 12:00
-BKG010,Lecture Hall B,Daniel Lee,Confirmed,Jan 05,11:00 - 12:30
+id,facility_name,member_name,status,date,time,member_email,member_phone,booked_on,payment_method,service_fee
+BK12345678,Basketball Court A,John Smith,Confirmed,Monday Dec 18 2025,2:00 PM - 3:00 PM,john.smith@email.com,+1 (555) 123-4567,Dec 10 2025,Visa **** 4242,2.50
+BKG002,Executive Meeting Room,Jane Smith,Pending,Dec 28 2025,12:00 - 14:00,jane@example.com,+1 555 999 8888,Dec 20 2025,MasterCard **** 1111,5.00
+BKG003,Main Auditorium,Michael Brown,Confirmed,Dec 29 2025,14:00 - 16:00,michael.b@email.com,+1 555 111 2222,Dec 21 2025,Visa **** 9999,15.00
+BKG004,Tennis Court 1,Emily Davis,Cancelled,Dec 30 2025,18:00 - 19:00,emily.d@test.com,+1 555 333 4444,Dec 22 2025,Amex **** 0000,1.50
+BKG005,Computer Lab 1,David Wilson,Confirmed,Dec 31 2025,09:00 - 11:00,dwilson@tech.org,+1 555 444 5555,Dec 23 2025,PayPal,3.00
+BKG006,Quiet Study Pod,Sarah Johnson,Pending,Dec 28 2025,13:00 - 15:00,s.johnson@edu.com,+1 555 666 7777,Dec 24 2025,Visa **** 1212,0.50
+BKG007,Swimming Pool Lane 1,Chris Martin,Confirmed,Jan 02 2026,06:00 - 07:00,cmartin@swim.net,+1 555 888 9999,Dec 25 2025,MasterCard **** 3333,2.00
+BKG008,Banquet Hall,Robert Taylor,Pending,Jan 03 2026,19:00 - 23:00,rtaylor@events.com,+1 555 000 1111,Dec 26 2025,Visa **** 5678,25.00
+BKG009,Music Rehearsal Room,Jessica White,Confirmed,Jan 04 2026,10:00 - 12:00,jess.white@music.com,+1 555 222 3333,Dec 27 2025,Discover **** 4321,2.50
+BKG010,Lecture Hall B,Daniel Lee,Confirmed,Jan 05 2026,11:00 - 12:30,dlee@uni.edu,+1 555 777 8888,Dec 28 2025,Visa **** 8765,4.00
+BKG011,Basketball Court A,Tom Harris,Confirmed,Jan 06 2026,16:00 - 18:00,tom.h@sport.com,+1 555 999 0000,Dec 29 2025,PayPal,2.50
+BKG012,Tennis Court 1,Laura Miller,Confirmed,Jan 06 2026,17:00 - 18:00,lmiller@net.com,+1 555 123 4567,Dec 30 2025,MasterCard **** 2222,1.50
+BKG013,Executive Meeting Room,Kevin Clark,Cancelled,Jan 07 2026,09:00 - 10:00,kclark@corp.com,+1 555 234 5678,Dec 31 2025,Amex **** 1010,5.00
+BKG014,Computer Lab 1,Nancy Lewis,Confirmed,Jan 08 2026,13:00 - 15:00,nlewis@code.com,+1 555 345 6789,Jan 01 2026,Visa **** 3434,3.00
+BKG015,Swimming Pool Lane 1,Paul Walker,Pending,Jan 09 2026,07:00 - 08:00,pwalker@fast.com,+1 555 456 7890,Jan 02 2026,Visa **** 5555,2.00
+BKG016,Quiet Study Pod,Linda Hall,Confirmed,Jan 09 2026,10:00 - 14:00,lhall@study.com,+1 555 567 8901,Jan 03 2026,MasterCard **** 8888,0.50
+BKG017,Main Auditorium,Steven Young,Confirmed,Jan 10 2026,18:00 - 21:00,syoung@show.com,+1 555 678 9012,Jan 04 2026,Visa **** 0001,15.00
+BKG018,Music Rehearsal Room,Karen King,Confirmed,Jan 11 2026,14:00 - 16:00,kking@song.com,+1 555 789 0123,Jan 05 2026,PayPal,2.50
+BKG019,Lecture Hall B,Brian Scott,Pending,Jan 12 2026,08:30 - 10:00,bscott@teach.com,+1 555 890 1234,Jan 06 2026,Discover **** 1122,4.00
+BKG020,Banquet Hall,Amy Adams,Confirmed,Jan 14 2026,12:00 - 16:00,aadams@party.com,+1 555 901 2345,Jan 07 2026,Visa **** 9090,25.00
+BKG021,Basketball Court A,Mark Nelson,Confirmed,Jan 15 2026,19:00 - 20:00,mnelson@hoops.com,+1 555 012 3456,Jan 08 2026,MasterCard **** 6666,2.50
+BKG022,Tennis Court 1,Betty Carter,Confirmed,Jan 16 2026,08:00 - 09:00,bcarter@rally.com,+1 555 123 7890,Jan 09 2026,Visa **** 7777,1.50

@@ -15,20 +15,27 @@ public class InvoiceController {
         this.facilityDAO = new FacilityDAO();
     }
 
-    // UC03: Generate Invoice
     public Invoice generateInvoice(String bookingId) {
+        // 1. Get Booking Data
         Booking booking = bookingDAO.findById(bookingId);
         if (booking == null) return null;
 
-        // Logic: Find the price of the facility used in the booking
-        double price = 0.0;
+        // 2. Get Facility Data 
+        Facility facility = null;
         for (Facility f : facilityDAO.findAll()) {
+        
             if (f.getName().equalsIgnoreCase(booking.getFacilityName())) {
-                price = f.getPrice();
+                facility = f;
                 break;
             }
         }
 
-        return new Invoice(booking.getId(), price, booking.getDate());
+        // Handle case where facility might be deleted/renamed
+        if (facility == null) {
+            facility = new Facility("UNK", booking.getFacilityName(), "Unknown", "Unknown", 0, 0.0, "Inactive", "-", "-", "-");
+        }
+
+        // 3. Create Invoice with both objects
+        return new Invoice(booking, facility);
     }
 }

@@ -54,7 +54,7 @@ public class PricingRule {
      * @return
      */
     public boolean isActive(Date date) {
-        // TODO implement here
+      
         return false;
     }
 
